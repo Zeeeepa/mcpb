@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "athena-protocol": {
+      "command": "node",
+      "args": ["PLACEHOLDER_PATH/mcp-servers/athena-protocol/dist/index.js"],
+      "type": "stdio",
+      "timeout": 300,
+      "env": {
+        "DEFAULT_LLM_PROVIDER": "anthropic",
+        "ANTHROPIC_API_KEY": "YOUR_API_KEY_HERE"
+      }
+    },
+    "mercury-spec-ops": {
+      "command": "node",
+      "args": ["PLACEHOLDER_PATH/mcp-servers/mercury-spec-ops/dist/src/server.js"],
+      "type": "stdio",
+      "timeout": 120
+    }
+  }
+}
+
